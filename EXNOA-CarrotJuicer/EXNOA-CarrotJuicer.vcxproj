@@ -48,6 +48,8 @@
     <LinkIncremental>true</LinkIncremental>
     <TargetName>version</TargetName>
     <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+    <OutDir>C:\Users\Jachin\Umamusume</OutDir>
+    <IncludePath>C:\Code\vcpkg\installed\x64-windows\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -108,12 +110,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="base64.cpp" />
     <ClCompile Include="config.cpp" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="edb.cpp" />
     <ClCompile Include="hook.cpp" />
     <ClCompile Include="mdb.cpp" />
+    <ClCompile Include="msgpack11.cpp" />
     <ClCompile Include="notifier.cpp" />
+    <ClCompile Include="PEDump.cpp" />
     <ClCompile Include="proxy.cpp" />
     <ClCompile Include="requests.cpp" />
     <ClCompile Include="responses.cpp" />
@@ -122,19 +127,26 @@
     <None Include="version.def" />
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="version.asm" />
-  </ItemGroup>
-  <ItemGroup>
+    <ClInclude Include="base64.h" />
     <ClInclude Include="config.hpp" />
     <ClInclude Include="edb.hpp" />
+    <ClInclude Include="il2cpp-api-functions.h" />
+    <ClInclude Include="il2cpp-class.h" />
+    <ClInclude Include="il2cpp-tabledefs.h" />
+    <ClInclude Include="il2cpp.h" />
     <ClInclude Include="mdb.hpp" />
+    <ClInclude Include="msgpack11.hpp" />
     <ClInclude Include="notifier.hpp" />
+    <ClInclude Include="PEDump.h" />
     <ClInclude Include="requests.hpp" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="responses.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="EXNOA-CarrotJuicer.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="version.asm" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

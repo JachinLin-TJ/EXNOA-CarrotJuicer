@@ -63,16 +63,20 @@
     <ClCompile Include="requests.cpp">
       <Filter>Source Files\requests</Filter>
     </ClCompile>
+    <ClCompile Include="PEDump.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base64.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msgpack11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="version.def">
       <Filter>Source Files\proxy</Filter>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <MASM Include="version.asm">
-      <Filter>Source Files\proxy</Filter>
-    </MASM>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
@@ -96,10 +100,36 @@
     <ClInclude Include="requests.hpp">
       <Filter>Source Files\requests</Filter>
     </ClInclude>
+    <ClInclude Include="PEDump.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="il2cpp-api-functions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="il2cpp-tabledefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="il2cpp-class.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="il2cpp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msgpack11.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="EXNOA-CarrotJuicer.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="version.asm">
+      <Filter>Source Files\proxy</Filter>
+    </MASM>
   </ItemGroup>
 </Project>
